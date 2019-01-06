@@ -9,20 +9,13 @@ def train():
     random_seed = 0
     n_eval_episodes = 10        # evaluate average reward over n episodes
     lr = 0.0002                 # learing rate
-    beta1 = 0.8                 # beta 1 for adam optimizer
+    beta1 = 0.5                 # beta 1 for adam optimizer
     n_epochs = 1000             # number of epochs
     n_iter = 100                # updates per epoch
     batch_size = 100            # num of transitions sampled from expert
     directory = "./preTrained/{}".format(env_name) # save trained models
     filename = "GAIL_{}_{}".format(env_name, random_seed)
     ###################################
-    # lr = 0.0002 beta1 = 0.5 n_iter = 100 batch size = 100
-    #
-    #
-    #
-    #
-    #
-    ####
     
     env = gym.make(env_name)
     state_dim = env.observation_space.shape[0]
