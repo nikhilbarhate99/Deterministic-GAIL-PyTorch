@@ -1,9 +1,10 @@
 import gym
-from models import GAIL
+from GAIL import GAIL
 from PIL import Image
 
 def test():
     env_name = "BipedalWalker-v2"
+    #env_name = "LunarLanderContinuous-v2"
     random_seed = 0
     lr = 0.0002
     beta1 = 0.5
@@ -12,17 +13,17 @@ def test():
     render = True
     save_gif = False
     
-    filename = '_solved'
-    directory = "./preTrained/{}/ONE".format(env_name)
+    directory = "./preTrained/{}".format(env_name)
+    filename = "GAIL_{}_{}".format(env_name, random_seed)
     
     env = gym.make(env_name)
     state_dim = env.observation_space.shape[0]
     action_dim = env.action_space.shape[0]
     max_action = float(env.action_space.high[0])
     
-    policy = GAIL(state_dim, action_dim, max_action, lr, beta1)
+    policy = GAIL(env_name, state_dim, action_dim, max_action, lr, beta1)
     
-    policy.load()
+    policy.load(directory, filename)
     
     for ep in range(1, n_episodes+1):
         ep_reward = 0
@@ -46,6 +47,4 @@ def test():
                 
 if __name__ == '__main__':
     test()
-    
-    
     
