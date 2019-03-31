@@ -12,6 +12,6 @@ Expert Policy              |  Recovered Policy
 :-------------------------:|:-------------------------:
 ![](https://github.com/nikhilbarhate99/Deterministic-GAIL-PyTorch/blob/master/gif/BipedalWalker_expert.gif)  |  ![](https://github.com/nikhilbarhate99/Deterministic-GAIL-PyTorch/blob/master/gif/BipedalWalker_learned.gif)
 
-Epochs vs rewards
-
+Epochs vs rewards   |
+:-------------------------:
 ![](https://github.com/nikhilbarhate99/Deterministic-GAIL-PyTorch/blob/master/gif/graph_BipedalWalker-v2.png)
