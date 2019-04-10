@@ -8,7 +8,7 @@ Although it works sometimes (depending on the type of environment), the algorith
 
 ### BipedalWalker-v2
 
-Expert Policy              |  Recovered Policy
+Expert Policy              |  Recovered Policy (10 expert episodes)
 :-------------------------:|:-------------------------:
 ![](https://github.com/nikhilbarhate99/Deterministic-GAIL-PyTorch/blob/master/gif/BipedalWalker_expert.gif)  |  ![](https://github.com/nikhilbarhate99/Deterministic-GAIL-PyTorch/blob/master/gif/BipedalWalker_learned.gif)
 
