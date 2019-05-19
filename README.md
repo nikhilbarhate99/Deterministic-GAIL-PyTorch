@@ -10,7 +10,7 @@ Although it works sometimes (depending on the type of environment), the algorith
 
 Expert Policy              |  Recovered Policy (10 expert episodes)
 :-------------------------:|:-------------------------:
-![](https://github.com/nikhilbarhate99/Deterministic-GAIL-PyTorch/blob/master/gif/BipedalWalker_expert.gif)  |  ![](https://github.com/nikhilbarhate99/Deterministic-GAIL-PyTorch/blob/master/gif/BipedalWalker_learned.gif)
+![](https://github.com/nikhilbarhate99/Deterministic-GAIL-PyTorch/blob/master/gif/BipedalWalker_expert.gif) |  ![](https://github.com/nikhilbarhate99/Deterministic-GAIL-PyTorch/blob/master/gif/BipedalWalker_learned.gif)
 
 Epochs vs rewards   |
 :-------------------------:
