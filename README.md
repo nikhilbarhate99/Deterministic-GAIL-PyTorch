@@ -4,7 +4,7 @@ This is an attempt to implement Generative Adversarial Imitation Learning (GAIL)
 
 ## Results
 
-Although it works sometimes (depending on the type of environment), the algorithm has very high variance, and the results are highly inconsistent.
+Although it works sometimes (depending on the type of environment), the algorithm has high variance, and the results are inconsistent.
 
 ### BipedalWalker-v2
 
