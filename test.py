@@ -7,7 +7,7 @@ def test():
     #env_name = "LunarLanderContinuous-v2"
     random_seed = 0
     lr = 0.0002
-    beta1 = 0.5
+    betas = (0.5, 0.999)
     n_episodes = 3
     max_timesteps = 1000
     render = True
@@ -21,7 +21,7 @@ def test():
     action_dim = env.action_space.shape[0]
     max_action = float(env.action_space.high[0])
     
-    policy = GAIL(env_name, state_dim, action_dim, max_action, lr, beta1)
+    policy = GAIL(env_name, state_dim, action_dim, max_action, lr, betas)
     
     policy.load(directory, filename)
     
